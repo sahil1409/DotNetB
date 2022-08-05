@@ -6,55 +6,62 @@ namespace Largest {
     class Driver {
         public static void Main() {
             ArrayClass obj1 = new ArrayClass();
-            obj1.ArrayNum();
+            int res1 = obj1.ArrayNum();
+            System.Console.WriteLine("Largest number of Array is: " + res1);
 
             ArrayListClass obj2 = new ArrayListClass();
-            obj2.ArrayListNum();
+            int res2 = obj2.ArrayListNum();
+            System.Console.WriteLine("Largest number of ArrayList is: " + res2);
 
             LinkedListClass obj3 = new LinkedListClass();
-            obj3.LinkedListNum();
+            int res3 = obj3.LinkedListNum();
+            System.Console.WriteLine("Largest number of LinkedList is: " + res3);
         }
     }
     class ArrayClass {
-        public void ArrayNum() {
+        public int ArrayNum() {
             int [] myArray = {1, 5, 3, 4, 2};
             int max = myArray[0];
+
             for (int i = 0; i < myArray.Length; i++) {
                 if (myArray[i] > max) max = myArray[i];
             }
-            System.Console.WriteLine("Largest number of Array is: " + max);
+
+            return max;
         }
     }
     class ArrayListClass {
-        public void ArrayListNum() {
+        public int ArrayListNum() {
             ArrayList myArrayList = new ArrayList();
             myArrayList.Add(1);
-            myArrayList.Add(5);
+            myArrayList.Add(-5);
             myArrayList.Add(3);
             myArrayList.Add(4);
-            myArrayList.Add(2);
+            myArrayList.Add(20);
 
             int max = int.MinValue;
             foreach (int i in myArrayList)  {
                 if (i > max) max = i;
             }
-            System.Console.WriteLine("Largest number of ArrayList is: " + max);
+
+            return max;
         }
     }
     class LinkedListClass {
-        public void LinkedListNum() {
+        public int LinkedListNum() {
             LinkedList <int> myLinkedList = new LinkedList<int>();
-            myLinkedList.AddLast(1);
+            myLinkedList.AddLast(19);
             myLinkedList.AddLast(5);
-            myLinkedList.AddLast(3);
-            myLinkedList.AddLast(4);
+            myLinkedList.AddLast(-33);
+            myLinkedList.AddLast(40);
             myLinkedList.AddLast(2);
 
             int max = int.MinValue;
             foreach (int i in myLinkedList)  {
                 if (i > max) max = i;
             }
-            System.Console.WriteLine("Largest number of LinkedList is: " + max);
+            
+            return max;
         }
     }
 }
