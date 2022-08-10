@@ -5,22 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tags</title>
+    <style>
+        table, th, td {border: 1px solid black;}
+    </style>
 </head>
 <body style="margin: 50px;">
-    <h1 style="text-align: center; text-shadow: 2px 2px blue;">
-        Basic Tags
-    </h1>
-    <div class="division1" style="color: red;">
-        <p>
-            This is a paragraph. You can edit here.
-        </p>
-    </div>
-    <div class="division2" style="background-color: yellow;">
-        <h3>This is a list</h3>
-        <ol>
-            <li><a href = "www.google.com">Google</a></li>
-            <li><a href = "www.youtube.com">Youtube</a></li>
-        </ol>
-    </div>
+    <form action="Try.html">
+        <h1 style="text-align: center; text-shadow: 2px 2px blue;">
+            Basic Tags
+        </h1>
+        <div class="division1" style="color: red;">
+            <p>
+                This is a paragraph. You can edit here.
+            </p>
+        </div>
+        <div class="division2" style="background-color: yellow;">
+            <h3>This is a list of websites</h3>
+            <ol>
+                <li><a href = "https://www.google.com">Google</a></li>
+                <li><a href = "https://www.youtube.com">Youtube</a></li>
+            </ol>
+            <br>
+            <h3>Fruits</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Orange</li>
+                <li>Mango</li>
+            </ul>
+        </div>
+        <div>
+            <table>
+                <tr><th>ID</th><th>Employee Name</th></tr>
+                <tr><td>1</td><td>Sahil</td></tr>
+                <tr><td>2</td><td>Harsh</td></tr>
+                <tr><td>3</td><td>Meet</td></tr>
+                <tr><td>4</td><td>Shubham</td></tr>
+            </table>
+        </div>
+        <br><br>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
