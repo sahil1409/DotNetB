@@ -1,0 +1,19 @@
+body {
+    margin: 50px;
+}
+
+h1 {
+    text-align: center; text-shadow: 2px 2px blue;
+}
+
+.division1 {
+    color: red;
+}
+
+.division2 {
+    background-color: yellow;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
