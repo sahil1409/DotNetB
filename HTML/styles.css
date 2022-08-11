@@ -17,3 +17,13 @@ h1 {
 table, th, td {
     border: 1px solid black;
 }
+
+
+.container {
+    width : 400px;
+}
+
+img{
+    float: right;
+    display: inline;
+}
