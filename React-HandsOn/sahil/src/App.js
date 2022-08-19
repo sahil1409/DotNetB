@@ -17,9 +17,17 @@ function App() {
         >
           Learn React
         </a>
+        <p><AppChild name="Sahil Shaikh" /></p>
       </header>
     </div>
   );
 }
+
+function AppChild(props){
+  return <span>
+      Owner: {props.name}
+    </span>
+}
+// ReactDOM.render(<App />, document.getElementById('app'));
 
 export default App;
