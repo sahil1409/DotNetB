@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Region from './Region';
 
 function App() {
   return (
@@ -9,13 +10,7 @@ function App() {
         <p>
           My name is <span><AppChild name="Sahil Shaikh" /></span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+        <Region />
       </header>
     </div>
   );

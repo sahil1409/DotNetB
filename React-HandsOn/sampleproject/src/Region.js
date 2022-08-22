@@ -9,7 +9,7 @@ class Region extends React.Component {
     render() {
         return(
             <div>
-                <h1>I live in {this.state.State}, {this.state.Country}. The name of the City I live in is {this.state.City}.</h1>
+                <h2>I live in {this.state.State}, {this.state.Country}. The name of the City I live in is {this.state.City}.</h2>
             </div>
         );
     }
