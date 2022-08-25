@@ -1,15 +1,16 @@
 import React from "react";
+import './Region.css';
 
 function Welcome1({name}) {
-    return (<h3>Hello, {name}</h3>);
+    return (<h3>Hello, {name} | </h3>);
 }
 
 function Welcome2({name}) {
-    return (<h3>Hello, {name}</h3>);
+    return (<h3>Hello, {name} | </h3>);
 }
 
 function Welcome3({name1}) {
-    return (<h3>Hello, {name1}</h3>);
+    return (<h3>Hello, {name1} | </h3>);
 }
 
 const Welcome4 = ({name2}) => {
